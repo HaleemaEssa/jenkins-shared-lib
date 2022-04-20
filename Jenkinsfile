@@ -8,7 +8,7 @@ pipeline {
         stage('Con1') {
             steps {
                 //helloWorldExternal(dayOfWeek:"Thursday",name:"Haleema")
-                gitbranch_edge1()
+                gitBranchEdge1()
                 //git branch: 'main', url: 'https://github.com/HaleemaEssa/temp-test.git'
                 login()
                 dockerBuild("haleema/test-temp:latest")
