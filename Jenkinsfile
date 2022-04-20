@@ -13,6 +13,7 @@ pipeline {
                 login()
                 dockerBuild("haleema/test-temp:latest")
                 push("haleema/test-temp")
+                dockerBuild("haleema/test-temp")
             }
         }
     }
