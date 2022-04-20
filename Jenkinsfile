@@ -11,7 +11,7 @@ pipeline {
                 //gitbranch("main","https://github.com/HaleemaEssa/temp-test.git")
                 git branch: 'main', url: 'https://github.com/HaleemaEssa/temp-test.git'
                 login()
-                build("haleema/test-temp:latest")
+                dockerBuild("haleema/test-temp:latest")
                 push("haleema/test-temp")
             }
         }
